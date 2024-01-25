@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PuckPros</title>
+    <title>StickSniper</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
       rel="stylesheet"
@@ -21,9 +21,22 @@
         font-family: 'Manrope', sans-serif;
     }
 </style>
+
+<script>
+  tailwind.config = {
+      theme: {
+          extend: {
+              colors: {
+                  clifford: '#da373d',
+                  'color-primary': '#FF4240',
+              }
+          }
+      }
+  }
+</script>
   </head>
-  <body class=".font-manrope">
-    <header class="container mx-auto">
+  <body class="font-manrope">
+    <header class="container mx-auto mb-10 lg:mb-24">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -67,25 +80,118 @@
               </div>
         </nav>
         <!-- Slider -->
-        <div class="carousel w-full">
+        <div class="relative">
+          <div class="carousel w-full lg:h-[550px]">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="/Images/1.png" class="w-full" />
-              <div class="absolute flex justify-center gap-4 transform -translate-y-1/2 lg:left-10 lg:right-5 bottom-8 ">
+              <div class="absolute flex   gap-4 transform -translate-y-1/2 lg:left-10 lg:right-5 bottom-8 ">
                 <a href="#slide4" class="btn btn-circle  bg-black text-white">❮</a> 
                 <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
               </div>
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
-              <img src="/Images/taken_1170x658.jpg" class="w-full rounded-2xl" />
-              <div class="absolute flex justify-center gap-4 transform -translate-y-1/2 lg:left-10 lg:right-5 bottom-8">
+              <img src="/Images/2.png" class="w-full rounded-2xl" />
+              <div class="absolute flex  gap-4 transform -translate-y-1/2 lg:left-10 lg:right-5 bottom-8">
                 <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
                 <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
               </div>
             </div> 
           </div>
+          <div class="w-full bg-[#131318] p-8 rounded-2xl lg:absolute right-28 -bottom-4 lg:w-[500px]">
+            <div class="card-body">
+              <h2 class="card-title text-2xl font-extrabold text-white">Meet all the heroes from the field</h2>
+              <p class="text-white opacity-60 text-sm">Dive into the world of hockey and discover the untold stories of its heroes. From unwavering dedication to awe-inspiring skills, get to know the passionate players who define the game on the ice. </p>
+            </div>
+          </div>
+        </div>
     </header>
-    <main>
-    
+    <main class="container mx-auto">
+    <section class="mb-10 lg:mb-24">
+      <div class="text-center space-y-6 lg:space-y-8">
+        <hr class="dashed-line">
+        <div class="text-center space-y-6">
+          <h1 class="text-4xl font-extrabold">Professional Hockeys Club</h1>
+          <p class="text-sm">
+            Experience the pinnacle of excellence with our professional hockey club, where passion meets precision on the ice. <br> Join a community of champions dedicated to pushing the boundaries of the game.
+          </p>
+        </div>
+        <hr class="dashed-line">
+      </div>
+      <div class="grid grid-cols-1 mt-6 lg:grid-cols-4 mt-12">
+        <div class="text-center space-y-4">
+          <div class="radial-progress text-primary text-[#4C8DF1]" style="--value:70;" role="progressbar">70%</div>
+          <div>
+            <h1 class="text-xl font-semibold">Prayer Facility</h1>
+            <p class="text-sm font-light">Enhance your experience at our turf with a dedicated Prayer Facility, providing a tranquil space for moments of reflection and spiritual connection</p>
+          </div>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="radial-progress text-primary text-orange-500" style="--value:70;" role="progressbar">87%</div>
+          <div>
+            <h1 class="text-xl font-semibold">Experienced Coach</h1>
+            <p class="text-sm font-light"> Elevate your skills under the guidance of a mentor dedicated to unlocking your full potential on the ice.</p>
+          </div>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="radial-progress text-primary text-yellow-300" style="--value:70;" role="progressbar">90%</div>
+          <div>
+            <h1 class="text-xl font-semibold">Senior Player</h1>
+            <p class="text-sm font-light">Experience the game at its finest as our seasoned athlete brings skill, leadership, and a wealth of experience to the team, shaping the future of success on the ice."</p>
+          </div>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="radial-progress text-primary text-red-600" style="--value:70;" role="progressbar">85%</div>
+          <div>
+            <h1 class="text-xl font-semibold">Training Ground</h1>
+            <p class="text-sm font-light"> Elevate your skills and fitness in an environment tailored for excellence, where champions are forged on the ice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Program section -->
+    <section class="mb-10 lg:mb-24">
+      <div class=" text-center space-y-6 lg:space-y-8">
+        <hr class="dashed-line">
+        <div class="text-center space-y-6">
+            <h1 class="text-4xl font-extrabold">Program Sections</h1>
+            <p class="text-sm">Explore the specialized training zones within StickSniper, our dedicated hockey club. <br> From precision shooting to tactical plays, our program sections cater to every aspect of your game, ensuring you hit the mark on the ice.
+            </p>
+        </div>
+        <hr class="dashed-line">
+    </div>
+    <div class="grid grid-cols-1 mt-6 gap-6 lg:grid-cols-2 mt-12">
+      <div class="card w-96 bg-base-100 shadow-xl image-full">
+        <figure><img class="w-full" src="/Images/2.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title card-title text-white lg:mt-11">Junior Program</h2>
+          <p class="text-sm text-white">Embark on a journey of skill development and passion with StickSniper's Junior Program. Nurture young talents on the ice, providing a foundation for future hockey excellence in a supportive and dynamic environment.</p>
+          <div class="card-actions justify-start">
+            <button class="btn btn-wide border-0 bg-color-primary text-white text-xl font-bold">Register Now!</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl image-full">
+        <figure><img class="w-full" src="/Images/3.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title card-title text-white lg:mt-11">Teenager Program</h2>
+          <p class="text-sm text-white">Empower teenage enthusiasts through StickSniper's Teenager Program, fostering hockey skills, camaraderie, and personal growth on the ice. Join a vibrant community where passion meets potential, shaping the future stars of the game.</p>
+          <div class="card-actions justify-start">
+            <button class="btn btn-wide border-0 bg-color-primary text-white text-xl font-bold">Register Now!</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl image-full lg:col-span-2">
+        <figure><img class="w-full" src="/Images/4.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title card-title text-white lg:mt-11">Professional Program</h2>
+          <p class="text-sm text-white">Elevate your game to the highest level with StickSniper's Professional Program. Tailored for elite athletes, our program combines advanced training, strategic gameplay, and unparalleled support, ensuring a path to excellence on and off the ice</p>
+          <div class="card-actions justify-start">
+            <button class="btn btn-wide border-0 bg-color-primary text-white text-xl font-bold">Register Now!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
     </main>
     <footer>
 
